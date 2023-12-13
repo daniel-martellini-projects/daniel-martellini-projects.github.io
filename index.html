@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio - CCT 2023</title>
+    <meta name="description" content="My Portfolio" />
+    <meta name="keywords" content="My Portfolio" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cc5fe7e974.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img id="animation" src="ship.png" />
+
+    <div id="home" class="header">
+      <div class="container">
+        <nav>
+          <h1 id="namelogo"><span id="colorSpan">Daniel.</span>Martellini.</h1>
+          <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contactinfo">Contact Info</a></li>
+            <li><a href="" class="btn-btn2" id="downloadbtn">Download CV</a></li>
+            <i class="fa-solid fa-xmark" onclick="menuclose()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="menuopen()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End and Back-End Developer</p>
+          <h1>
+            Welcome to my Web Portfolio<br />I'm
+            <span id="colorSpan">Daniel</span> Martellini
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-lefthalf">
+            <img src="profile.jpg" alt="profile image" />
+          </div>
+          <div id="about" class="about-righthalf">
+            <h1>About Me:</h1>
+            <p>
+              Hello! My name is Daniel Martellini, I'm a Computer Science
+              Student from Sao Paulo, Brazil<br />
+              I moved to Dublin (Ireland), 5 years ago in January 2018 when I
+              was 18 years old, in order to improve my English and try to get
+              some work experience abroad<br />
+              After finishing my English Language course I decided to pursue
+              college education in Ireland instead of going back home to go to
+              college there<br />
+              Time goes by really fast and here am I looking a first experience
+              in the I.T market I would be happy to explore any different areas
+              of the Computing World, Developing UI's, creating Back-end
+              apprications,Cloud migrations or even Setting up Routers and
+              Switches to configure a Network
+            </p>
+            <div class="links">
+              <p class="link activelink" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="link" onclick="opentab('skills')">Skills</p>
+              <p class="link" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="contents activetab" id="education">
+              <ul>
+                <li>
+                  <span>CCT COLLEGE DUBLIN (2020-2024)</span><br />Bachelors in
+                  Information Technology and Computing (Level 8) <br />
+                  Currently attending 6th semester of 8<br />
+                  Expected to graduate by September 2024.<br />In CCT I have
+                  learned how to develop web applications, java applications,
+                  how to create and connect to a database, how networks
+                  communicate between eachother and much more, now it's time to
+                  get some real world experience.
+                </li>
+                <li>
+                  <span>FATEC - SANTO ANDRE (2017)</span><br />Mechatronics
+                  Engineering<br />
+                  I only attended First Year due to moving to Ireland before the
+                  beggining of the second year.<br />
+                  Here is were I first learned the basics of Programming and got
+                  interested in the subject
+                </li>
+                <li>
+                  <span
+                    >ETEC - Technical Course in Civil Construction<br />Integrate
+                    to High School Diploma (2014-2016)</span
+                  ><br />
+                  Three year High School degree, made along with Technical
+                  course in Civil Construction, We were taught how to develop a
+                  construction project by using the correct tools such as
+                  AutoCad and design tools such as SketchUp, we also learned how
+                  to plan and design the whole electrical part of the
+                  construction together with plumming and more, such as
+                  structural load calculations
+                </li>
+              </ul>
+            </div>
+            <div class="contents" id="skills">
+              <ul>
+                <li>
+                  <span>Java Development</span><br />Creating java applications
+                  to make life easier, Using frameworks such as Springboot to
+                  Create webapps, using JavaFX to create java applications,
+                  Multithreading applications, JAVA RMI and Websockets,
+                  Connecting those apps to databases, deploying them and more.
+                </li>
+                <li>
+                  <span>Web Development</span><br />Creation of Websites,
+                  front-end UI development, giving websites a good-look, being
+                  able to create a website that feels nice to browse without
+                  having issues, mostly HTML, CSS and JS, but I have also
+                  created webapps in Spring where you could manage two whole
+                  databases using CSS, HTML and Java with Spring
+                </li>
+                <li>
+                  <span>Networking</span><br />Network planning and building.
+                  Routers and Switches configuring, creation of VLANs and
+                  subnetting to separate different departments, knowledge of
+                  Network Security standards and application of those in order
+                  to secure the Network, configuring of DHCP and DNS and more.
+                </li>
+              </ul>
+            </div>
+            <div class="contents" id="experience">
+              <ul>
+                <li>
+                  <span>Waiter in Milano (Dublin)</span><br />Taking orders,
+                  delivering food to the tables, preparing, and serving drinks
+                  and making sure all costumers are satisfied with the food and
+                  the service. I have worked and covered shifts in more than 6
+                  different branches, Always following companies brand
+                  standards.
+                </li>
+                <li>
+                  <span>Manager on Duty in Milano (Dublin)</span
+                  ><br />Overseeing and managing operation during my shift,
+                  ensuring excellence, inventory keeping, ordering food and
+                  beverages and managing finances.
+                </li>
+                <li>
+                  <span>Custumer Assistent in Tesco(Dublin)</span
+                  ><br />Assisting Customers with their purchases, processing
+                  orders and returns, helping with enquiries and resolving
+                  customer complains.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container service">
+      <div class="services" id="services">
+        <h1>My Services</h1>
+        <div class="listservices">
+          <div class="element">
+            <i class="fa-brands fa-java fa"></i>
+            <h2 id="colorSpan">Java Swing</h2>
+            <p>
+              Java Scene Builder, in this example you can see one application
+              where you can calculate matrices and and binomials.
+            </p>
+            <a
+              href="https://github.com/danielmartellini/CAwithGUI"
+              target="_blank"
+              >See Project</a
+            >
+          </div>
+          <div class="element">
+            <i class="fa-regular fa-window-maximize"></i>
+            <h2 id="colorSpan">WepApps</h2>
+            <p>
+              On this example my team and I developed a webapp to manage a
+              system that is connected to 2 different databases and the Admin
+              can execute all CRUD functions on a MongoDB database, the project
+              was build using Springboot Java, HTML and CSS.
+            </p>
+            <a
+              href="https://github.com/JeffOlima/integratedAssigment"
+              target="_blank"
+              >See Project</a
+            >
+          </div>
+          <div class="element">
+            <i class="fa-solid fa-network-wired"></i>
+            <h2 id="colorSpan">BlockChain</h2>
+            <p>
+              Here me and my team developed a smartcontract using solodity in
+              order to create a decentralized taxi ordering app, we used
+              truffle, ganache and solitidy.
+            </p>
+            <a
+              href="https://github.com/laisantos12/SmartContract-"
+              target="_blank">See Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="container portfolio">
+            <h1>My Portfolio</h1>
+            <div class="portfoliolist">
+                <div class="projects">
+                    <img src="port1.jpg">
+                    <div class="portfoliodiv">
+                        <h3>Crud API with MongoDB</h3>
+                        <p>Database Management System with Java Sprint and noSQL database</p>
+                        <a href="https://github.com/JeffOlima/integratedAssigment" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="port2.jpg">
+                    <div class="portfoliodiv">
+                        <h3>Restaurant Website</h3>
+                        <p>Here the user can vizualize the restaurant's menu and add items to a basket to check the total price</p>
+                        <a href="https://github.com/danielmartellini/MyRestaurant" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="port3.jpg">
+                    <div class="portfoliodiv">
+                    <h3>MultiThreading in Java</h3>
+                    <p>Using Java Threads to create solutions to everyday problems.</p>
+                    <a href="https://github.com/danielmartellini/CSCA1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/danielmartellini" target="_blank" class="btn">See more</a>
+    </div>
+</div>
+</div>
+</div>
+<div id="contactinfo" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Information</h1>
+                <p><i class="fa-solid fa-envelope"></i>danielbmartellini@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(083)0580597</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/daniel_martellini/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-martellini-9b95871b4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/danielmartellini/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Enter your Message here"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="js.js"></script>
+  </body>
+</html>
